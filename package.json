@@ -4,6 +4,12 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts":{
+      "pull": "cross-env git pull && git submodule update --recursive --remote --merge && git submodule foreach --recursive \"git fetch origin main && git checkout main && git merge origin/main || true\"",
+  }
+  "scripts-info": {
+      "pull": "Use to update the submodules"
+  }
   "devDependencies": {
     "lerna": "^6.0.1"
   }

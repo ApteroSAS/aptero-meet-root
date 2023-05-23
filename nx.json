@@ -18,5 +18,6 @@
         "{projectRoot}/dist"
       ]
     }
-  }
+  },
+  "defaultBase": "main"
 }

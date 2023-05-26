@@ -11,5 +11,5 @@
 [submodule "packages/Aptero-Meet"]
 	path = packages/Aptero-Meet
 	url = https://github.com/ApteroSAS/Aptero-Meet
-	branch = main
+	branch = master
 	update = merge

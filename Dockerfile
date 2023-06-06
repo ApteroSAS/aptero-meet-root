@@ -5,13 +5,10 @@ RUN apt install -y jq
 
 #teams-module
 COPY packages/teams-module/package.json packages/teams-module/package.json
-COPY packages/teams-module/yarn.lock packages/teams-module/yarn.lock
 #basic-modules
 COPY packages/basic-modules/package.json packages/basic-modules/package.json
-COPY packages/basic-modules/yarn.lock packages/basic-modules/yarn.lock
 # aptero-meet
 COPY packages/Aptero-Meet/package.json packages/Aptero-Meet/package.json
-COPY packages/Aptero-Meet/yarn.lock packages/Aptero-Meet/yarn.lock
 #root config
 COPY package.json .
 COPY yarn.lock .

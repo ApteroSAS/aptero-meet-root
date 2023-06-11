@@ -19,12 +19,13 @@ COPY yarn.lock .
 #install
 RUN yarn
 
+#build
+COPY . .
+
 COPY lerna.json .
 #set useNx to false
 RUN jq '.useNx = false' lerna.json > temp.json && mv temp.json lerna.json
 
-#build
-COPY . .
 RUN yarn run build
 RUN cp -r packages/Aptero-Meet/dist ./dist
 

@@ -17,7 +17,7 @@ COPY package.json .
 COPY yarn.lock .
 
 #install
-RUN yarn
+RUN yarn --install-from-yarn-lock
 
 #build
 COPY . .

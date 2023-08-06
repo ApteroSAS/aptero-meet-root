@@ -86,3 +86,4 @@ src/assets/locales/extracted-messages.json
 /build/
 
 ./version.json
+version.json

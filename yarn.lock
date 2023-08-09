@@ -2668,6 +2668,11 @@
     tslib "^2.3.1"
     uuid "^8.3.2"
 
+"@mozilla/lilypad-ui@^1.8.3":
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/@mozilla/lilypad-ui/-/lilypad-ui-1.8.6.tgz#7a7c53a10af900c9c537f034140bb745313482b4"
+  integrity sha512-XCrQQMgV05MPF321gdHIuj1d3b3E+ec4weETFGDBCS/Q3zV8KGNg/awF4cfDGMlEalQqDCKeoBXaKMD3xcqXWg==
+
 "@mozillareality/easing-functions@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@mozillareality/easing-functions/-/easing-functions-0.1.1.tgz#de7994336412b02e7d58e8391d0c230df8b79ad2"
@@ -2786,10 +2791,10 @@
   dependencies:
     semver "^7.3.5"
 
-"@npmcli/git@^4.0.0":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@npmcli/git/-/git-4.0.4.tgz#cdf74f21b1d440c0756fb28159d935129d9daa33"
-  integrity sha512-5yZghx+u5M47LghaybLCkdSyFzV/w4OuH12d96HO389Ik9CDsLaDZJVynSGGVJOLn6gy/k7Dz5XYcplM3uxXRg==
+"@npmcli/git@^4.0.0", "@npmcli/git@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/git/-/git-4.1.0.tgz#ab0ad3fd82bc4d8c1351b6c62f0fa56e8fe6afa6"
+  integrity sha512-9hwoB3gStVfa0N31ymBmrX+GuDGdVA/QWShZVqE0HK2Af+7QGGrCTbZia/SW0ImUTjTne7SP91qxDmtXvDHRPQ==
   dependencies:
     "@npmcli/promise-spawn" "^6.0.0"
     lru-cache "^7.4.4"
@@ -2860,14 +2865,16 @@
   integrity sha512-gp8pRXC2oOxu0DUE1/M3bYtb1b3/DbJ5aM113+XJBgfXdussRAsX0YOrOhdd8WvnAR6auDBvJomGAkLKA5ydxA==
 
 "@npmcli/package-json@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/package-json/-/package-json-3.1.0.tgz#d9eb34083be4275520f3844d17fc74926d47cae1"
-  integrity sha512-qNPy6Yf9ruFST99xcrl5EWAvrb7qFrwgVbwdzcTJlIgxbArKOq5e/bgZ6rTL1X9hDgAdPbvL8RWx/OTLSB0ToA==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/package-json/-/package-json-3.1.1.tgz#5628332aac90fa1b4d6f98e03988c5958b35e0c5"
+  integrity sha512-+UW0UWOYFKCkvszLoTwrYGrjNrT8tI5Ckeb/h+Z1y1fsNJEctl7HmerA5j2FgmoqFaLI2gsA1X9KgMFqx/bRmA==
   dependencies:
+    "@npmcli/git" "^4.1.0"
     glob "^10.2.2"
     json-parse-even-better-errors "^3.0.0"
     normalize-package-data "^5.0.0"
     npm-normalize-package-bin "^3.0.1"
+    proc-log "^3.0.0"
 
 "@npmcli/promise-spawn@^3.0.0":
   version "3.0.0"
@@ -4714,11 +4721,6 @@
   resolved "https://registry.yarnpkg.com/@types/parse5/-/parse5-6.0.3.tgz#705bb349e789efa06f43f128cef51240753424cb"
   integrity sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==
 
-"@types/phoenix@^1.5.4":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@types/phoenix/-/phoenix-1.6.0.tgz#eb7536259ee695646e75c4c7b0c9a857ea174781"
-  integrity sha512-qwfpsHmFuhAS/dVd4uBIraMxRd56vwBUYQGZ6GpXnFuM2XMRFJbIyruFKKlW2daQliuYZwe0qfn/UjFCDKic5g==
-
 "@types/prettier@^2.1.5":
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.3.tgz#3e51a17e291d01d17d3fc61422015a933af7a08f"
@@ -5506,21 +5508,12 @@ add-stream@^1.0.0:
   resolved "https://registry.yarnpkg.com/add-stream/-/add-stream-1.0.0.tgz#6a7990437ca736d5e1288db92bd3266d5f5cb2aa"
   integrity sha512-qQLMr+8o0WC4FZGQTcJiKBVC59JylcPSrTtk6usvmIDFUOCKegapy1VHQwRbFMOFyb/inzUVqHs+eMYKDM1YeQ==
 
-add@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
-  integrity sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==
-
 address@^1.0.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/address/-/address-1.2.2.tgz#2b5248dac5485a6390532c6a517fda2e3faac89e"
   integrity sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==
 
-"aframe-slice9-component@github:takahirox/aframe-slice9-component#2ec0810cbf23f487a10c767d24dee6d5b7ede77f":
-  version "1.0.0"
-  resolved "https://codeload.github.com/takahirox/aframe-slice9-component/tar.gz/2ec0810cbf23f487a10c767d24dee6d5b7ede77f"
-
-"aframe@github:mozillareality/aframe#0fa14187b8f3e90726385904591eba799380df79":
+"aframe@github:mozillareality/aframe#hubs/master":
   version "1.0.3"
   resolved "https://codeload.github.com/mozillareality/aframe/tar.gz/0fa14187b8f3e90726385904591eba799380df79"
   dependencies:
@@ -5645,15 +5638,15 @@ ajv@^8.0.0, ajv@^8.0.1, ajv@^8.9.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-"ammo-debug-drawer@github:infinitelee/ammo-debug-drawer#561fd698109e61456f34136a53dd08b45d4ad9ca":
+"ammo-debug-drawer@github:infinitelee/ammo-debug-drawer":
   version "1.0.1"
   resolved "https://codeload.github.com/infinitelee/ammo-debug-drawer/tar.gz/561fd698109e61456f34136a53dd08b45d4ad9ca"
 
-"ammo.js@github:mozillareality/ammo.js#a38109e87e300c820da14c9615be379caf03d77a":
+"ammo.js@github:mozillareality/ammo.js#hubs/master":
   version "0.0.2"
   resolved "https://codeload.github.com/mozillareality/ammo.js/tar.gz/a38109e87e300c820da14c9615be379caf03d77a"
 
-"animejs@github:mozillareality/anime#883d028420c7eb8c2934290e5d10827be4640318":
+"animejs@github:mozillareality/anime#hubs/master":
   version "3.0.1"
   resolved "https://codeload.github.com/mozillareality/anime/tar.gz/883d028420c7eb8c2934290e5d10827be4640318"
 
@@ -6212,7 +6205,7 @@ axios@^1.0.0:
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
-babel-eslint@^10.0.1, babel-eslint@^10.1.0:
+babel-eslint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
   integrity sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==
@@ -6512,14 +6505,6 @@ babel-plugin-transform-property-literals@^6.9.4:
   dependencies:
     esutils "^2.0.2"
 
-babel-plugin-transform-react-jsx-img-import@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx-img-import/-/babel-plugin-transform-react-jsx-img-import-0.1.4.tgz#589b98d462299e235577f2d5371b439453196eac"
-  integrity sha512-DH29ZoMyN+wT+ZH62q3Mo1g4y2TVXZVWe/Cl2yj0NcO5OydfyBcwlAxfMSFP1HyRFDzkiqWkoVvtcKvnsojqjA==
-  dependencies:
-    babel-types "^6.10.0"
-    lodash "^4.13.1"
-
 babel-plugin-transform-regexp-constructors@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-regexp-constructors/-/babel-plugin-transform-regexp-constructors-0.4.3.tgz#58b7775b63afcf33328fae9a5f88fbd4fb0b4965"
@@ -6606,24 +6591,6 @@ babel-preset-minify@^0.5.2:
     babel-plugin-transform-simplify-comparison-operators "^6.9.4"
     babel-plugin-transform-undefined-to-void "^6.9.4"
     lodash "^4.17.11"
-
-babel-runtime@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
-  integrity sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==
-  dependencies:
-    core-js "^2.4.0"
-    regenerator-runtime "^0.11.0"
-
-babel-types@^6.10.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.26.0.tgz#a3b073f94ab49eb6fa55cd65227a334380632497"
-  integrity sha512-zhe3V/26rCWsEZK8kZN+HaQj5yQ1CilTObixFzKW1UWjqG7618Twz6YEsCnjfg5gBcJh02DrpCkS9h98ZqDY+g==
-  dependencies:
-    babel-runtime "^6.26.0"
-    esutils "^2.0.2"
-    lodash "^4.17.4"
-    to-fast-properties "^1.0.3"
 
 bail@^1.0.0:
   version "1.0.5"
@@ -6753,7 +6720,7 @@ binpacking@~0.0.1:
   resolved "https://registry.yarnpkg.com/binpacking/-/binpacking-0.0.1.tgz#e82e43e8eb17064681e43f9c8dbc731e317d1892"
   integrity sha512-egOC0ynCAu+4XMry+CR5/GVQYcZdWi5QAJcO4t35Z957Xniu+bVJFRNOr3HiYd3UXEwKxk56Q1pyOxA6+rx1lg==
 
-"bitecs@github:mozilla/bitECS#913b4ae261684eee205251e41a3250d1c1a2817e":
+"bitecs@github:mozilla/bitECS#hubs-patches":
   version "0.3.38"
   resolved "https://codeload.github.com/mozilla/bitECS/tar.gz/913b4ae261684eee205251e41a3250d1c1a2817e"
 
@@ -7130,7 +7097,7 @@ buffer@^6.0.3:
     base64-js "^1.3.1"
     ieee754 "^1.2.1"
 
-"buffered-interpolation@github:Infinitelee/buffered-interpolation#5bb18421ebf2bf11664645cdc7a15bd77ee2156b":
+"buffered-interpolation@github:Infinitelee/buffered-interpolation", "buffered-interpolation@github:Infinitelee/buffered-interpolation#5bb18421ebf2bf11664645cdc7a15bd77ee2156b":
   version "0.2.5"
   resolved "https://codeload.github.com/Infinitelee/buffered-interpolation/tar.gz/5bb18421ebf2bf11664645cdc7a15bd77ee2156b"
 
@@ -7870,7 +7837,7 @@ commander@^2.19.0, commander@^2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
-commander@^4.0.0, commander@^4.0.1, commander@^4.1.1:
+commander@^4.0.1, commander@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
@@ -8197,7 +8164,7 @@ core-js@^1.0.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha512-ZiPp9pZlgxpWRu0M+YWbm6+aQ84XEfH1JRXvfOc/fILWI0VKhLC2LX13X1NYq4fULzLMq7Hfh43CSo2/aIaUPA==
 
-core-js@^2.4.0, core-js@^2.6.5:
+core-js@^2.6.5:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
@@ -8596,16 +8563,6 @@ data-urls@^3.0.1, data-urls@^3.0.2:
     abab "^2.0.6"
     whatwg-mimetype "^3.0.0"
     whatwg-url "^11.0.0"
-
-date-fns-tz@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.1.4.tgz#38282c2bfab08946a4e9bb89d733451e5525048b"
-  integrity sha512-lQ+FF7xUxxRuRqIY7H/lagnT3PhhSnnvtGHzjE5WZKwRyLU7glJfLys05SZ7zHlEr6RXWiqkmgWq4nCkcElR+g==
-
-date-fns@2.22.1:
-  version "2.22.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.22.1.tgz#1e5af959831ebb1d82992bf67b765052d8f0efc4"
-  integrity sha512-yUFPQjrxEmIsMqlHhAhmxkuH769baF21Kk+nZwZGyrMoyLA+LugaQtC0+Tqf9CBUUULWwUJt6Q5ySI3LJDDCGg==
 
 date-fns@^2.29.3:
   version "2.30.0"
@@ -9339,14 +9296,6 @@ entities@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
   integrity sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==
-
-env-cmd@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/env-cmd/-/env-cmd-10.1.0.tgz#c7f5d3b550c9519f137fdac4dd8fb6866a8c8c4b"
-  integrity sha512-mMdWTT9XKN7yNth/6N6g2GuKuJTsKMDHlQFUDacb/heQRRWOTIZ42t1rMHnQu4jYxU1ajdTeJM+9eEETlqToMA==
-  dependencies:
-    commander "^4.0.0"
-    cross-spawn "^7.0.0"
 
 env-paths@^2.2.0:
   version "2.2.1"
@@ -13689,7 +13638,7 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-"lib-hubs@github:mozillareality/lib-hubs#f897132e88ba0c554424d911b2a56a47b6732c7c":
+"lib-hubs@github:mozillareality/lib-hubs#master":
   version "0.0.1"
   resolved "https://codeload.github.com/mozillareality/lib-hubs/tar.gz/f897132e88ba0c554424d911b2a56a47b6732c7c"
 
@@ -13961,7 +13910,7 @@ lodash.uniq@4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==
 
-lodash@^4.13.1, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4:
+lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -14829,11 +14778,6 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-ncp@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
-  integrity sha512-zIdGUrPRFTUELUvr3Gmc7KZ2Sw/h1PiVM0Af/oHB6zgnV1ikqSfRk+TOufi79aHYCW3NiOXmr1BP5nWbzojLaA==
-
 negotiator@0.6.3, negotiator@^0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
@@ -14865,7 +14809,7 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-"nipplejs@github:mozillareality/nipplejs#7b5f953f75df28d42689e96c6a8342ab0a3cb595":
+"nipplejs@github:mozillareality/nipplejs#mr-social-client/master":
   version "0.6.8"
   resolved "https://codeload.github.com/mozillareality/nipplejs/tar.gz/7b5f953f75df28d42689e96c6a8342ab0a3cb595"
 
@@ -16172,13 +16116,13 @@ phoenix-channels@^1.0.0:
   dependencies:
     websocket "^1.0.24"
 
-"phoenix@github:gfodor/phoenix-js#5cdfb1643f25d5620d03152d05134bdf7046d80e":
-  version "1.5.0"
-  resolved "https://codeload.github.com/gfodor/phoenix-js/tar.gz/5cdfb1643f25d5620d03152d05134bdf7046d80e"
-
 "phoenix@github:gfodor/phoenix-js#f4cebf1534dd7c503fe797ef396709c4d3ea8d69":
   version "1.4.0"
   resolved "https://codeload.github.com/gfodor/phoenix-js/tar.gz/f4cebf1534dd7c503fe797ef396709c4d3ea8d69"
+
+"phoenix@github:gfodor/phoenix-js#master":
+  version "1.5.0"
+  resolved "https://codeload.github.com/gfodor/phoenix-js/tar.gz/5cdfb1643f25d5620d03152d05134bdf7046d80e"
 
 picocolors@^0.2.1:
   version "0.2.1"
@@ -17311,11 +17255,6 @@ regenerate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
-
-regenerator-runtime@^0.11.0:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
-  integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
 regenerator-runtime@^0.13.11, regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.7:
   version "0.13.11"
@@ -19289,7 +19228,7 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-"three-ammo@github:mozillareality/three-ammo#26d445f13a63690271cdf385157ac91e269a744e":
+"three-ammo@github:mozillareality/three-ammo":
   version "1.0.12"
   resolved "https://codeload.github.com/mozillareality/three-ammo/tar.gz/26d445f13a63690271cdf385157ac91e269a744e"
 
@@ -19308,9 +19247,9 @@ three-pathfinding@^1.1.0:
   resolved "https://registry.yarnpkg.com/three-pathfinding/-/three-pathfinding-1.2.0.tgz#83b936104e22bc23b34bcf9d15574bbba21257ae"
   integrity sha512-TlIfy+mLOdP7OhQG4Mn1dNONYbhu2Xe+AD7jL8SbdKdAHxH/TF68svpk2c8UrSfR/3YWQ87Tq/lp5HQO/QuaMw==
 
-"three-to-ammo@github:infinitelee/three-to-ammo#9e68a3bbe500988f2dc0096f78c12dabbdaf5548":
-  version "1.0.0"
-  resolved "https://codeload.github.com/infinitelee/three-to-ammo/tar.gz/9e68a3bbe500988f2dc0096f78c12dabbdaf5548"
+"three-to-ammo@github:infinitelee/three-to-ammo":
+  version "1.0.1"
+  resolved "https://codeload.github.com/infinitelee/three-to-ammo/tar.gz/2364f7ce5e4b6b622f29a8a4f8b467b83aa36293"
 
 "three@github:mozillareality/three.js#65b5105908f5f135cad25fed07e25f15f3876777":
   version "0.141.0"
@@ -19398,11 +19337,6 @@ to-camel-case@1.0.0:
   integrity sha512-nD8pQi5H34kyu1QDMFjzEIYqk0xa9Alt6ZfrdEMuHCFOfTLhDG5pgTu/aAM9Wt9lXILwlXmWP43b8sav0GNE8Q==
   dependencies:
     to-space-case "^1.0.0"
-
-to-fast-properties@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
-  integrity sha512-lxrWP8ejsq+7E3nNjwYmUBMAgjMTZoTI+sdBOpvNyijeDLa29LUn9QaoXAHv4+Z578hbmHHJKZknzxVtvo77og==
 
 to-fast-properties@^2.0.0:
   version "2.0.0"

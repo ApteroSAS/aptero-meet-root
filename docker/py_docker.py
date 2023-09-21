@@ -1,39 +1,42 @@
 import sys
 import os
-    
-dockerImage = "aptero-hub"
-registry = "registry.aptero.co"
+import json
+
+
+f = open('docker.json',)
+data = json.load(f)
+dockerImage = data['image']
+registry = data['registry']
+
 c = os.system
 os.chdir("..")
 print(os.getcwd())
+
+
+def get_first_valid_version(file_list):
+    for file_name in file_list:
+        try:
+            with open(file_name, 'r') as file:
+                data = json.load(file)
+                if 'version' in data:
+                    print("Version :" + data['version'] +" - "+ file_name)
+                    return data['version']
+        except FileNotFoundError:
+            continue
+    return "latest"  # Default to "latest" if no valid version is found in any file
+
 if(sys.argv[1] == "build"):
     os.system("docker build -t "+dockerImage+" .")
- 
 elif(sys.argv[1] == "build_no_cache"):
     os.system("docker build --no-cache --progress=plain -t "+dockerImage+" .")
-
 elif(sys.argv[1] == "publish"):
-    import json
-
     try:
         version = sys.argv[2]
     except:
-        try:
-            f = open('version.json',)
-            data = json.load(f)
-            if data['version']:
-                version = data['version']
-            else:
-                raise Exception("no version found in file")
-        except:
-            f = open('package.json',)
-            data = json.load(f)
-            if data['version']:
-                version = data['version']
-            else:
-                version = "latest"
+        files_to_check = ['packages/Aptero-Meet/version.json','version.json', 'package.json']
+        version = get_first_valid_version(files_to_check)
 
-    c("docker build -t "+dockerImage+" .") 
+    c("docker build -t "+dockerImage+" .")
     c("docker login")
     c("docker tag "+dockerImage+":latest "+registry+"/"+dockerImage+":latest")
     c("docker push "+registry+"/"+dockerImage+":latest")
@@ -41,6 +44,5 @@ elif(sys.argv[1] == "publish"):
     c("docker tag "+dockerImage+":latest "+registry+"/"+dockerImage+":"+version)
     c("docker push "+registry+"/"+dockerImage+":"+version)
     print("tag version :"+version)
-
 else:
-    print("invalid usage");
+    print("invalid usage")

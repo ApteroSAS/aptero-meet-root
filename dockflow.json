@@ -1,0 +1,5 @@
+{
+  "image" : "aptero-hub",
+  "registry" : "registry.aptero.co",
+  "version" : "file:./packages/Aptero-Meet/version.json"
+}

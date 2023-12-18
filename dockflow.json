@@ -1,5 +1,5 @@
 {
   "image" : "aptero-hub",
-  "registry" : "registry.aptero.co",
+  "registry" : "rg.fr-par.scw.cloud/aptero",
   "version" : "file:./packages/Aptero-Meet/version.json"
 }

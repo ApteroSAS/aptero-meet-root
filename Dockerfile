@@ -16,6 +16,9 @@ COPY packages/Aptero-Meet/yarn.lock packages/Aptero-Meet/yarn.lock
 COPY package.json .
 COPY yarn.lock .
 
+#copy 3rd party vendor
+COPY packages/Aptero-Meet/vendor packages/Aptero-Meet/vendor
+
 #install
 RUN yarn --install-from-yarn-lock
 

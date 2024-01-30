@@ -1,15 +1,15 @@
 [submodule "packages/basic-modules"]
 	path = packages/basic-modules
 	url = https://github.com/ApteroSAS/basic-modules
-	branch = feature/merge
+	branch = main
 	update = merge
 [submodule "packages/teams-module"]
 	path = packages/teams-module
 	url = https://github.com/ApteroSAS/teams-module
-	branch = feature/merge
+	branch = main
 	update = merge
 [submodule "packages/Aptero-Meet"]
 	path = packages/Aptero-Meet
 	url = https://github.com/ApteroSAS/Aptero-Meet
-	branch = feature/merge2++
+	branch = master
 	update = merge

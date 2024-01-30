@@ -84,3 +84,6 @@ src/assets/locales/extracted-messages.json
 /.fx/states/local.userdata
 /.fx/states/state.local.json
 /build/
+
+./version.json
+version.json

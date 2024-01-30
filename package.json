@@ -17,7 +17,8 @@
     "ci:coverage:teams:run": "cross-env NODE_ENV=development PLAYWRIGHT_JUNIT_OUTPUT_NAME=./coverage/junit/junit-teams.xml npx playwright ../../test --config ./test/playwright-teams.config.js --workers=1 --reporter=junit",
     "ci:coverage:serve:run": "cross-env CI=true START_SERVER_AND_TEST_INSECURE=1 start-server-and-test ci:coverage:serve https://127.0.0.1:53000 ci:coverage:playwright:run",
     "ci": "cross-env yarn run clean && yarn run ci:coverage:serve:run && nyc --no-clean yarn --version",
-    "clean": "rimraf .nyc_output coverage junit.xml dist build"
+    "clean": "rimraf .nyc_output coverage junit.xml dist build",
+    "docker:publish": "npx dockflow publish"
   },
   "scripts-info": {
     "start": "Use to start dev on the project",

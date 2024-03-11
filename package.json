@@ -1,9 +1,11 @@
 {
   "name": "root",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
     "start": "concurrently  \"lerna run start --scope=@aptero/aptero-meet\" \"lerna watch --ignore '@aptero/aptero-meet' -- lerna run build\"",
     "build": "lerna run build",
@@ -25,10 +27,11 @@
     "pull": "Use to update the submodules"
   },
   "devDependencies": {
-    "lerna": "^6.6.2",
-    "@nrwl/nx-cloud": "^16.0.5",
-    "concurrently": "^8.0.1",
+    "@nrwl/nx-cloud": "^18.0.0",
+    "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
-    "nx": "15.9.4"
-  }
+    "lerna": "^8.1.2",
+    "nx": "18.0.6"
+  },
+  "packageManager": "yarn@4.1.0"
 }

@@ -87,3 +87,5 @@ src/assets/locales/extracted-messages.json
 
 ./version.json
 version.json
+.nx
+/packages/teams-module/stats.html

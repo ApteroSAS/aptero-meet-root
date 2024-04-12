@@ -17,6 +17,11 @@
       "outputs": [
         "{projectRoot}/dist"
       ]
+    },
+    "@aptero/aptero-meet": {
+      "build": {
+        "inputs": ["!ignored"]
+      }
     }
   }
 }

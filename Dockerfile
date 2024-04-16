@@ -29,8 +29,8 @@ RUN yarn set version berry
 
 #install
 #RUN yarn --install-from-yarn-lock
-#RUN yarn install --immutable
-RUN yarn install
+RUN yarn install --immutable
+#RUN yarn install
 
 #build
 COPY . .

@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "concurrently  \"lerna run start --scope=@aptero/aptero-meet\" \"lerna watch --ignore '@aptero/aptero-meet' -- lerna run build\"",
+    "start:all": "concurrently  \"lerna run start --scope=@aptero/aptero-meet\" \"lerna watch --ignore '@aptero/aptero-meet' -- lerna run build\"",
+    "start": "lerna run start --scope=@aptero/aptero-meet",
     "build": "lerna run build",
     "pull": "cross-env git pull && git submodule update --recursive --remote --merge && git submodule foreach --recursive \"git fetch origin main && git checkout main && git merge origin/main || true\"",
     "pw:debug:run": "cross-env CI=1 PW_PORT=53000 PWDEBUG=1 npx playwright ../../test --config ./test/playwright-teams.config.js StaticTab.test.ts",
@@ -32,5 +33,5 @@
     "nx": "18.0.6",
     "source-map-loader": "^5.0.0"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.2.1"
 }

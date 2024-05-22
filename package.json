@@ -26,11 +26,12 @@
     "pull": "Use to update the submodules"
   },
   "devDependencies": {
-    "@nrwl/nx-cloud": "^18.0.0",
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
+    "dockflow": "^1.0.7",
     "lerna": "^8.1.2",
     "nx": "18.0.6",
+    "nx-cloud": "^18.0.0",
     "source-map-loader": "^5.0.0"
   },
   "packageManager": "yarn@4.2.1"

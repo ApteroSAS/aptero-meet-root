@@ -1,9 +1,12 @@
-FROM node:20
+FROM node:22
 
 RUN apt update -y
 RUN apt install -y jq
 
 WORKDIR /app
+
+# Enable Corepack
+RUN corepack enable
 
 #teams-module
 COPY packages/teams-module/package.json packages/teams-module/package.json
@@ -25,7 +28,6 @@ COPY .yarnrc.yml .
 
 #be sure to use yarn 2
 COPY .yarn ./.yarn
-RUN yarn set version berry
 
 #install
 #RUN yarn --install-from-yarn-lock

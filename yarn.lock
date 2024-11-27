@@ -17335,7 +17335,7 @@ __metadata:
 "lib-hubs@github:mozillareality/lib-hubs#9430db2a06cc63c6f91319c47393fea1dca42d43":
   version: 0.0.1
   resolution: "lib-hubs@https://github.com/mozillareality/lib-hubs.git#commit=9430db2a06cc63c6f91319c47393fea1dca42d43"
-  checksum: 10c0/da4c89c8072c67d2f1a073db751d6d38a866cc97e5aeb1a128178e1d0f77101c753d96e588d81dd3098a092e50c00e1f63aeca8ec33353bc18fd0b7332dc8bc0
+  checksum: 10c0/6ba7324762e430d3bdafa049de239ea272e2f90ed7fea2cb40b76d50f6fcb862a78b613cccc29ff9a78902c25c91cf5345365d5ab5c3a653c13c9884df1ce4d1
   languageName: node
   linkType: hard
 
@@ -21972,13 +21972,13 @@ __metadata:
   linkType: hard
 
 "rimraf@npm:^5.0.5":
-  version: 5.0.7
-  resolution: "rimraf@npm:5.0.7"
+  version: 5.0.10
+  resolution: "rimraf@npm:5.0.10"
   dependencies:
     glob: "npm:^10.3.7"
   bin:
     rimraf: dist/esm/bin.mjs
-  checksum: 10c0/bd6dbfaa98ae34ce1e54d1e06045d2d63e8859d9a1979bb4a4628b652b459a2d17b17dc20ee072b034bd2d09bd691e801d24c4d9cfe94e16fdbcc8470a1d4807
+  checksum: 10c0/7da4fd0e15118ee05b918359462cfa1e7fe4b1228c7765195a45b55576e8c15b95db513b8466ec89129666f4af45ad978a3057a02139afba1a63512a2d9644cc
   languageName: node
   linkType: hard
 
